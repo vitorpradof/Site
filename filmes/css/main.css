@@ -13,30 +13,42 @@
   src: url('../fonts/roboto/Roboto-Regular.ttf');
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #eaece5;
+  font-size: 20px;
+  padding: 10px;
+}
+
+ul a {
+  padding: 10px; 
+}
+
 body {
   margin: 0px;
   color: #eaece5;
-  background-color: #c0ded9;
+  background-color: rgb(240, 240, 240);
+  font-family: roboto, sans-serif;
+  font: 20px;
 }
 
 body > header {
-  height: 50px;
-  background-color: #3b3a30;
+  height: auto;
   width: 100%;
+  background-color: #3b3a30;
+  text-align: center;
 }
 
-h1 {
-  height: 50px;
+h1, h2 {
   margin: 0px;
 }
 
-.centralizar {
+main {
   display: flex;
   justify-content: space-between;
   align-content: center;
-}
-
-main {
   width: 90%;
   margin: 5%;
   color: black;
@@ -48,20 +60,20 @@ main header {
   margin 0px;
 }
 
-main section header h1 {
-  background-color: #3b3a30;
-  color: #eaece5;
-  font-family: roboto-light, sans-serif;
-  margin: 0px;
-  padding: 0px;
-  height: 70px;
-}
-
 section {
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 1px;
   background-color: #b2c2bf;
+  padding: 5px;
   width: 31%;
+  height: 800px;
+}
+
+section header {
+  height: 64%;
+  width: 100%;
+  background-color: #3b3a30;
+  color: #eaece5;
 }
 
 section img {
@@ -69,8 +81,13 @@ section img {
   width: 100%;
 }
 
+section article {
+  text-align: justify;
+}
+
 section footer {
-  height: 30px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 #rodape {
@@ -81,4 +98,20 @@ section footer {
   justify-content: center;
   font-family: roboto, sans-serif;
   background-color: #3b3a30;
+}
+
+header > a:visited, header > a:link {
+  text-decoration: none;
+  color: #eaece5;
+}
+
+li > a:visited, li > a:link {
+  text-decoration: none;
+  color: #3b3a30;
+}
+
+header > a:hover, li > a:hover {
+  background-color: #3b3a30;
+  color: #eaece5;
+  opacity: .5;
 }
